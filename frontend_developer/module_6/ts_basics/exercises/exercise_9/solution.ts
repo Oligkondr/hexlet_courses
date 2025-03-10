@@ -3,8 +3,8 @@ enum ModalStatus {
     Opened,
 }
 
-const buildModal = (text: string, state: ModalStatus): { text: string, state: ModalStatus } => {
-    return {text, state};
+const buildModal = (text: string, status: ModalStatus): { text: string, status: ModalStatus } => {
+    return {text, status};
 }
 
 const modal = buildModal('hexlet forever', ModalStatus.Opened);
